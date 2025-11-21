@@ -1,6 +1,6 @@
 - sensor:
     name: next_tower_bridge_lift
-    command: "python command_line/scrape-tower-bridge.py"
+    command: "python command_line/lib/tower_bridge.py"
     value_template: "{{ value_json.next_lift | as_datetime }}"
     device_class: timestamp
     scan_interval: 600
